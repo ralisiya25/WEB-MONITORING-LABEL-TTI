@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rendang Tempe Koro Pedang - Dynamic Pricing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sistem Monitoring & Dynamic Pricing</h1>
+    <h2>Rendang Tempe Koro Pedang</h2>
+  </header>
+
+  <main>
+    <div class="camera-container">
+      <video id="video" autoplay></video>
+      <canvas id="canvas" style="display:none;"></canvas>
+      <div class="controls">
+        <label for="cameraSelect">Pilih Kamera:</label>
+        <select id="cameraSelect">
+          <option value="environment">Kamera Belakang</option>
+          <option value="user">Kamera Depan</option>
+        </select>
+        <button id="scanBtn">Scan Warna</button>
+      </div>
+    </div>
+
+    <div id="result" class="result-box"></div>
+
+    <section class="history">
+      <h3>Riwayat Pemindaian</h3>
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th>Waktu</th>
+            <th>RGB</th>
+            <th>Kategori</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="exportBtn">Ekspor CSV</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

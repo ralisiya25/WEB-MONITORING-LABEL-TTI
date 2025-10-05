@@ -1,0 +1,61 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #4B090C;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.camera-container {
+  text-align: center;
+}
+video {
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #4B090C;
+  border-radius: 10px;
+}
+.controls {
+  margin-top: 10px;
+}
+button {
+  padding: 10px 20px;
+  background: #4B090C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #6d1016;
+}
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.history {
+  margin-top: 40px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
